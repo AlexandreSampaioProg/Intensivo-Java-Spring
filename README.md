@@ -1,35 +1,3 @@
-# Projeto DSList - Intensivão Java Spring
-
-**1. Perdeu alguma aula ou material de apoio?**
-
-Inscreva-se para receber os conteúdos no seu email:
-
-https://devsuperior.com.br
-
-    ATENÇÃO: os conteúdos ficarão disponíveis somente até domingo. Então organize-se, e bora pra cima! 
-
-**2. Tem alguma dúvida?**
-
-Envie uma mensagem pra gente no email que chegou pra você no ato da sua inscrição.
-
-## Calendário
-
-Os conteúdos ficarão temporariamente disponíveis no nosso website.
-
-Horário: cada aula será liberada por volta das 9h, somente para quem estiver inscrito no treinamento. Fica de olho no seu email, Whatsapp ou Telegram.
-
-| Dia / horário  | Conteúdo |
-| ------------- | ------------- |
-| Segunda-feira 9h | Aula 1: Projeto estruturado |
-| Terça-feira 9h | Aula 2: Domínio e consultas |
-| Quarta-feira 9h | Aula 3: Homologação e CORS |
-| Quinta-feira 9h | Aula 4: Endpoint especial |
-| Sexta-feira 9h | Aula 5: Resumão e reforço do aprendizado
-
-## Modelo de domínio DSList
-
-![Modelo de domínio DSList](https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/dslist-model.png)
-
 ## Trechos de código
 
 ### Plug-in Maven
