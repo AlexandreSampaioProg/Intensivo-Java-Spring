@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.alexandre.dslist.dto.GameDTO;
 import com.alexandre.dslist.dto.GameMinDTO;
 import com.alexandre.dslist.entities.Game;
+import com.alexandre.dslist.projections.GameMinProjection;
 import com.alexandre.dslist.repositories.GameRepository;
 
 
@@ -32,5 +33,11 @@ public class GameService {
 		Game result = gameRepository.findById(id).get();
 		GameDTO dto = new GameDTO(result);
 		return dto;
+	}
+	
+	@Transactional(readOnly = true) //não irá bloquear o banco de dados para escrita
+	public List<GameMinDTO> findByList(Long listId){
+		List<GameMinProjection> result = gameRepository.searchByList(listId);
+		return result.stream().map(x -> new GameMinDTO(x)).toList(); 
 	}
 }

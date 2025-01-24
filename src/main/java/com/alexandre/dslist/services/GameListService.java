@@ -19,11 +19,13 @@ public class GameListService {
 	@Autowired
 	private GameListRepository gameListRepository;
 	
+	
+	
 	@Transactional(readOnly = true) //não irá bloquear o banco de dados para escrita
 	public List<GameListDTO> findAll(){
 		List<GameList> result = gameListRepository.findAll();
 		List<GameListDTO> dto = result.stream().map(x -> new GameListDTO(x)).toList(); //transforma a lista de games em uma lista de games DTO
 		return dto;
 	}
-	
+
 }
